@@ -16,10 +16,106 @@ settings:
 
 monitors:
   - id: static-supa-sh # unique identifier
-    name: Caddy
-    description: '' # default=empty
+    name: supa.sh
     url: 'https://supa.sh/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    linkable: true # allows the title to be a link, default=true
+
+  - id: logs-supa-codes
+    name: logs.supa.codes
+    url: 'https://logs.supa.codes/'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: true
+
+  - id: logs-spanix-team
+    name: logs.spanix.team
+    url: 'https://logs.spanix.team/'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: true
+
+  - id: roles-lookup
+    name: roles.tv
+    url: 'https://roles.tv/stats'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: true
+
+  - id: tv-supa.sh
+    name: tv.supa.sh
+    url: 'https://tv.supa.sh/tags/ro'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false
+
+  - id: jellyfin
+    name: Jellyfin
+    url: 'https://jelly.supa.sh/web/'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: true
+
+  - id: qbittorrent
+    name: qBittorrent
+    url: 'https://qbt.supa.sh/'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: true
+
+  - id: mediamtx-webrtc
+    name: MediaMTX Live
+    url: 'https://live.supa.sh/supa/'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: kappa-lol
+    name: kappa.lol
+    url: 'https://kappa.lol/mXYBA'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false
+
+  - id: cdn-helper
+    name: CDN Helper
+    description: 'kappa.lol&co. microservice, thumbnail generator'
+    url: 'https://probe.supa.sh/t/mXYBA'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false
+
+  - id: minecraft-stv
+    name: Minecraft
+    url: 'https://mc.supa.sh/bluemap/'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: true
+
+  - id: umami
+    name: Umami
+    url: 'https://umami.supa.codes/'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: true
+
+  - id: logs-zonian-dev
+    name: BestLogs
+    url: 'https://logs.zonian.dev/'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: true
