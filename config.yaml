@@ -1,5 +1,5 @@
 settings:
-  title: 'status.supa.codes'
+  title: 'Status Page'
   url: 'https://status.supa.codes' # used for Slack messages
   logo: logo.webp # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -34,14 +34,6 @@ monitors:
   - id: logs-spanix-team
     name: logs.spanix.team
     url: 'https://logs.spanix.team/'
-    method: GET
-    expectStatus: 200
-    followRedirect: false
-    linkable: true
-
-  - id: roles-lookup
-    name: roles.tv
-    url: 'https://roles.tv/stats'
     method: GET
     expectStatus: 200
     followRedirect: false
