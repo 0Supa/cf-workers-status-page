@@ -1,5 +1,5 @@
 settings:
-  title: 'Status Page'
+  title: 'status.supa.codes'
   url: 'https://status.supa.codes' # used for Slack messages
   logo: logo.webp # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -47,14 +47,6 @@ monitors:
     followRedirect: false
     linkable: true
 
-  - id: tv-supa.sh
-    name: tv.supa.sh
-    url: 'https://tv.supa.sh/tags/ro'
-    method: GET
-    expectStatus: 200
-    followRedirect: false
-    linkable: false
-
   - id: jellyfin
     name: Jellyfin
     url: 'https://jelly.supa.sh/web/'
@@ -70,6 +62,22 @@ monitors:
     expectStatus: 200
     followRedirect: false
     linkable: true
+
+  - id: logs-zonian-dev
+    name: BestLogs
+    url: 'https://logs.zonian.dev/'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: true
+
+  - id: tv-supa.sh
+    name: tv.supa.sh
+    url: 'https://tv.supa.sh/tags/ro'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false
 
   - id: mediamtx-webrtc
     name: MediaMTX Live
@@ -102,7 +110,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: false
-    linkable: true
+    linkable: false
 
   - id: umami
     name: Umami
@@ -110,12 +118,4 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: true
-
-  - id: logs-zonian-dev
-    name: BestLogs
-    url: 'https://logs.zonian.dev/'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: true
+    linkable: false
