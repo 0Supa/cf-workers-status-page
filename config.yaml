@@ -111,3 +111,19 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: false
+
+  - id: lumi-fijxu
+    name: Luminous (fijxu)
+    url: 'https://twitch.nadeko.net/stat/'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
+
+  - id: lumi-brian
+    name: Luminous (brian)
+    url: 'https://luminous.alienpls.org/stat/'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false
