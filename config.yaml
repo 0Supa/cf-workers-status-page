@@ -39,6 +39,14 @@ monitors:
     followRedirect: false
     linkable: true
 
+  - id: roles-lookup
+    name: roles.tv
+    url: 'https://roles.tv/stats'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: true
+
   - id: jellyfin
     name: Jellyfin
     url: 'https://jelly.supa.sh/web/'
@@ -96,13 +104,13 @@ monitors:
     followRedirect: false
     linkable: false
 
-  - id: minecraft-stv
-    name: Minecraft
-    url: 'https://mc.supa.sh/bluemap/'
-    method: GET
-    expectStatus: 200
-    followRedirect: false
-    linkable: false
+  # - id: minecraft-stv
+  #   name: Minecraft
+  #   url: 'https://mc.supa.sh/bluemap/'
+  #   method: GET
+  #   expectStatus: 200
+  #   followRedirect: false
+  #   linkable: false
 
   - id: umami
     name: Umami
