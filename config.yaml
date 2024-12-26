@@ -23,13 +23,21 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
-  - id: logs-supa-codes
-    name: logs.supa.codes
-    url: 'https://logs.supa.codes/'
+  - id: tv-supa.sh
+    name: tv.supa.sh
+    url: 'https://tv.supa.sh/'
     method: GET
     expectStatus: 200
     followRedirect: false
     linkable: true
+
+  - id: logs-supa-codes
+    name: logs.supa.codes
+    url: 'https://logs.supa.codes/capabilities'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false
 
   - id: logs-spanix-team
     name: logs.spanix.team
@@ -70,14 +78,6 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: true
-
-  - id: tv-supa.sh
-    name: tv.supa.sh
-    url: 'https://tv.supa.sh/tags/ro'
-    method: GET
-    expectStatus: 200
-    followRedirect: false
-    linkable: false
 
   - id: mediamtx-webrtc
     name: MediaMTX Live
