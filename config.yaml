@@ -104,33 +104,17 @@ monitors:
     followRedirect: false
     linkable: false
 
-  # - id: minecraft-stv
-  #   name: Minecraft
-  #   url: 'https://mc.supa.sh/bluemap/'
-  #   method: GET
-  #   expectStatus: 200
-  #   followRedirect: false
-  #   linkable: false
+  - id: mc-supa
+    name: Minecraft SMP
+    url: 'https://mc.supa.sh/bluemap/'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false
 
   - id: umami
     name: Umami
     url: 'https://umami.supa.codes/'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: false
-
-  - id: lumi-fijxu
-    name: Luminous (fijxu)
-    url: 'https://twitch.nadeko.net/stat/'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: false
-
-  - id: lumi-brian
-    name: Luminous (brian)
-    url: 'https://luminous.alienpls.org/stat/'
     method: GET
     expectStatus: 200
     followRedirect: true
